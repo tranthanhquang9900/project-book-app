@@ -13,6 +13,24 @@
  *= require_tree .
  *= require_self
  */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 footer {
   margin-top: 100px;
 }
@@ -50,10 +68,10 @@ body {
   background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
 }
 .p-t-180 {
-  padding-top: 180px;
+  padding-top: 8%;
 }
 .p-b-100 {
-  padding-bottom: 100px;
+  padding-bottom: 8%;
 }
 
 .font-poppins {
@@ -120,7 +138,17 @@ body {
   font-weight: 400;
   margin-bottom: 36px;
 }
-
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
 .input-group {
   position: relative;
   margin-bottom: 33px;
@@ -131,6 +159,40 @@ body {
   font-size: 16px;
   color: #ccc;
   background: transparent;
+}
+
+.input--style-3 {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #ccc;
+  background: transparent;
+}
+
+.input--style-3::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ccc;
+}
+
+.input--style-3:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+  opacity: 1;
+}
+
+.input--style-3::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ccc;
+  opacity: 1;
+}
+
+.input--style-3:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ccc;
+}
+
+.input--style-3:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ccc;
 }
 .p-t-10 {
   padding-top: 10px;
@@ -167,4 +229,20 @@ body {
 
 .btn--green:hover {
   background: #4dae3c;
+}
+.fix-container {
+  padding-bottom: 4%;
+  width: 100%;
+}
+.bg-primary {
+  background-color: black !important;
+}
+.border-none {
+  border: none;
+}
+.fix-text {
+  width: 100%;
+}
+.fix-img {
+  height: 100%;
 }
