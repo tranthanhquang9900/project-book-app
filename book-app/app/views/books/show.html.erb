@@ -1,0 +1,37 @@
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @book.description %>
+</p>
+
+<p>
+  <h3>Reviews</h3>
+  <% @reviews.each do |review| %>
+    <div>
+      <strong>Title:<%= review.title %></strong>
+      <br>
+      <strong>Rate:<%= review.rate %></strong>
+      <br>
+      <strong>Description:<%= review.description %></strong>
+      <br>
+      <p>Book-id:<%= review.book_id %></p>
+      <p><%= link_to 'Delete', review_path(review), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    </div>
+  <% end %>
+  <%= render partial: 'reviews/form', locals: { review: @review } %>
+</p>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
