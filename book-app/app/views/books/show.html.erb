@@ -1,37 +1,48 @@
 
+<div class="card card-6">
+  <div class="card-table">
+    <p>
+      <strong>Title:</strong>
+      <%= @book.title %>
+    </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
+    <p>
+      <strong>Author:</strong>
+      <%= @book.author %>
+    </p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @book.description %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @book.description %>
-</p>
+    <p>
+      <h3>Reviews</h3>
+      <% @reviews.each do |review| %>
+        <div>
+          <strong>Title:<%= review.title %></strong>
+          <br>
+          <strong>Rate:<%= review.rate %></strong>
+          <br>
+          <strong>Description:<%= review.description %></strong>
+          <br>
+          <p>Book-id:<%= review.book_id %></p>
+          <p><%= link_to 'Delete', review_path(review),class:"btn btn--pill btn--red", method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        </div>
+      <% end %>
+    </p>
+  </div>
 
-<p>
-  <h3>Reviews</h3>
-  <% @reviews.each do |review| %>
-    <div>
-      <strong>Title:<%= review.title %></strong>
-      <br>
-      <strong>Rate:<%= review.rate %></strong>
-      <br>
-      <strong>Description:<%= review.description %></strong>
-      <br>
-      <p>Book-id:<%= review.book_id %></p>
-      <p><%= link_to 'Delete', review_path(review), method: :delete, data: { confirm: 'Are you sure?' } %></p>
-    </div>
-  <% end %>
-  <%= render partial: 'reviews/form', locals: { review: @review } %>
-</p>
+  <div class="card-bodies">
+      <div class="page-book">
+        <h2 class="text-book center-text">New Review</h2>
+            <div class="card card-5">
+                <%= render partial: 'reviews/form', locals: { review: @review } %>
 
-
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+                <div class="node"> 
+                  <%= link_to 'Edit', edit_book_path(@book) ,class:"btn btn--pill btn--node"%> |
+                  <%= link_to 'Back', books_path ,class:"btn btn--pill btn--node"%></div>
+            </div>
+        </div>
+  </div>
+</div>

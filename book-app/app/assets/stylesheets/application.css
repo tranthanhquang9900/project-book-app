@@ -67,6 +67,7 @@ body {
   background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
   background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
 }
+
 .p-t-180 {
   padding-top: 8%;
 }
@@ -102,9 +103,27 @@ body {
   width: 100%;
   display: table;
 }
-
+.card-4 {
+  padding-top: 3%;
+  background: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 35%;
+  margin: 0 auto;
+  display: table;
+}
 .card-3 .card-heading {
   background: url("../images/bg-heading-03.jpg") top left/cover no-repeat;
+  display: table-cell;
+  width: 50%;
+}
+
+.card-3 .card-login {
+  background: url("../images/bg-heading-02.jpg") top left/cover no-repeat;
   display: table-cell;
   width: 50%;
 }
@@ -138,7 +157,7 @@ body {
   font-weight: 400;
   margin-bottom: 36px;
 }
-input {
+/* input {
   outline: none;
   margin: 0;
   border: none;
@@ -148,7 +167,7 @@ input {
   width: 100%;
   font-size: 14px;
   font-family: inherit;
-}
+} */
 .input-group {
   position: relative;
   margin-bottom: 33px;
@@ -162,6 +181,12 @@ input {
 }
 
 .input--style-3 {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  border: none;
   padding: 5px 0;
   font-size: 16px;
   color: #ccc;
@@ -208,7 +233,21 @@ input {
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  font-size: 18px;
+  font-size: 15px;
+}
+
+.btn--book {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 33px;
+  font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 45%;
 }
 
 .btn--radius {
@@ -218,20 +257,54 @@ input {
 }
 
 .btn--pill {
+  border: 1px solid #b3cc4e;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .btn--green {
-  background: #57b846;
+  background: #b3cc4e;
 }
 
 .btn--green:hover {
-  background: #4dae3c;
+  background: #dbf768;
 }
+
+.btn--blue {
+  background: #5aa197;
+}
+
+.btn--blue:hover {
+  background: #7ed9cc;
+}
+
+.btn--red {
+  background: #470909;
+}
+
+.btn--red:hover {
+  background: #c20000;
+}
+
+.btn--back {
+  background: #c2b176;
+}
+
+.btn--back:hover {
+  background: #fae496;
+}
+
+.btn--edit {
+  width: 44%;
+  background: #c2b176;
+}
+
+.btn--edit:hover {
+  background: #fae496;
+}
+
 .fix-container {
-  padding-bottom: 4%;
   width: 100%;
 }
 .bg-primary {
@@ -245,4 +318,96 @@ input {
 }
 .fix-img {
   height: 100%;
+}
+.table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.bottom {
+  margin-bottom: 3%;
+}
+.page-book {
+  margin-top: 4%;
+  height: 500px;
+}
+p {
+  margin-bottom: 0;
+}
+.alert {
+  margin-bottom: 0;
+}
+.text-book {
+  font-size: 24px;
+}
+.link {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 2%;
+}
+div.actions {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+div.action {
+  text-align: left;
+}
+
+.card-6 {
+  background: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 70%;
+  margin: 0 auto;
+  display: table;
+}
+.card-6 .card-table {
+  padding: 0 5%;
+  display: table-cell;
+  width: 50%;
+}
+.card-6 .card-bodies {
+  display: table-cell;
+}
+.card-5 {
+  padding-top: 3%;
+  background: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+}
+
+.card-6 .card-bodiess {
+  display: table-cell;
+}
+.node {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.btn--node {
+  display: inline-block;
+  font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 15px;
+  width: 47%;
+  background: #5aa197;
 }

@@ -1,4 +1,7 @@
-<%= form_with(model: review, local: true) do |form| %>
+
+<div class="card-bodiess">
+  
+  <%= form_with(model: review, local: true) do |form| %>
   <% if review.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
@@ -11,24 +14,30 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_area :title %>
+  <div class="input-group">
+    <%= form.text_field :title , class: "input--style-3",placeholder:"Title"%>
   </div>
 
-  <div class="field">
-    <%= form.label :rate %>
-    <%= form.number_field :rate, min: 1, max: 5 %>
+  <div class="input-group">
+    
+    <%= form.number_field :rate, min: 1, max: 5 , class: "input--style-3",placeholder:"Rate" %>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+  <div class="input-group">
+    
+    <%= form.text_field :description , class: "input--style-3",placeholder:"Description" %>
   </div>
 
-  <%= form.hidden_field :book_id %>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+  
+    <%= form.hidden_field :book_id , class: "input--style-3",placeholder:"Description" %>
+
+
+    <div class="actions">
+      <%= form.submit%>
+      
+    </div>
+    
+  <% end %>
+
+</div>

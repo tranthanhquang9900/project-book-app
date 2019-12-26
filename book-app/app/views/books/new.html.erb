@@ -1,5 +1,9 @@
-<h1>New Book</h1>
+<div class="page-book">
+<h2 class="text-book center-text">New Book</h2>
+    <div class="card card-4">
 
-<%= render 'form', book: @book %>
-
-<%= link_to 'Back', books_path %>
+        <%= render 'form', book: @book %>
+        <div class="link"> <%= link_to 'Back', books_path ,class:"btn btn--pill btn--back" %></div>
+       
+    </div>
+</div>

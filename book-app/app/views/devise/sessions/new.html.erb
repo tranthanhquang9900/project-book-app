@@ -1,8 +1,8 @@
-<section class="fix-img">
-  <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+<section class="fix-img bg-gra-01">
+  <div class="page-wrapper p-t-180 p-b-100 font-poppins">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
-                <div class="card-heading" style=" background-image: url(<%= asset_path "bg-heading-03.jpg" %>)"></div>
+                <div class="card-login" style=" background-image: url(<%= asset_path "bg-heading-02.jpg" %>)"></div>
                 <div class="card-body">
                     <h2 class="title center-text">Log In</h2>
 
@@ -18,12 +18,12 @@
                       <% if devise_mapping.rememberable? %>
                         <div class="input-group border-none">
                           <%= f.check_box :remember_me %>
-                          <%= f.label :remember_me,class:"text-center fix-text" %>
+                          <%= f.label :remember_me,class:"" %>
                         </div>
                       <% end %>
 
                       <div class="actions ">
-                        <%= f.submit "Log In",class:"btn btn--pill btn--green" %>
+                        <%= f.submit "Log In",class:"btn--book btn--pill btn--green" %>
                       </div>
                     <% end %>
 
