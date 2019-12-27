@@ -91,7 +91,9 @@ body {
   border-radius: 3px;
   background: #fff;
 }
-
+.card-8 {
+  overflow: hidden;
+}
 .card-3 {
   background: #000;
   -webkit-border-radius: 10px;
@@ -105,7 +107,40 @@ body {
 }
 .card-4 {
   padding-top: 3%;
-  background: #000;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#e8965a),
+    to(#704424)
+  );
+  background: -webkit-linear-gradient(bottom, #6d945a 0%, #594034 100%);
+  background: -moz-linear-gradient(bottom, #6d945a 0%, #594034 100%);
+  background: -o-linear-gradient(bottom, #6d945a 0%, #594034 100%);
+  background: linear-gradient(to top, #6d945a 0%, #594034 100%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 35%;
+  margin: 0 auto;
+  display: table;
+}
+.card-7 {
+  padding-top: 3%;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fbc2eb),
+    to(#284b73)
+  );
+  background: -webkit-linear-gradient(bottom, #6faaed 0%, #543d6e 100%);
+  background: -moz-linear-gradient(bottom, #6faaed 0%, #543d6e 100%);
+  background: -o-linear-gradient(bottom, #6faaed 0%, #543d6e 100%);
+  background: linear-gradient(to top, #6faaed 0%, #543d6e 100%);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 30px;
@@ -357,7 +392,17 @@ div.action {
 }
 
 .card-6 {
-  background: #000;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fbc2eb),
+    to(#244054)
+  );
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #244054 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #244054 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #244054 100%);
+  background: linear-gradient(to top, #fbc2eb 0%, #244054 100%);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -367,6 +412,7 @@ div.action {
   width: 70%;
   margin: 0 auto;
   display: table;
+  margin-top: 4%;
 }
 .card-6 .card-table {
   padding: 0 5%;
@@ -378,13 +424,6 @@ div.action {
 }
 .card-5 {
   padding-top: 3%;
-  background: #000;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   display: table;
   width: 100%;
