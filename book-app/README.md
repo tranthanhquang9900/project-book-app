@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Open folder in Terminal  
+* Open folder project-book-app in Terminal,cd book-app.  
 
 * bundle install
 
